@@ -1,0 +1,25 @@
+- $1 ? values mais pas values :
+_______________________________
+    msg error à cause du POST postit :
+
+        INSERT a plus de colonnes cibles que d'expressions
+        types incohérents déduit pour le paramètre $1
+        le message bind fournit 4 paramètres, mais l'instruction préparée «  » en requiert 0
+
+- le delete tourne dans le vide (async?)
+
+- Pourquoi les modules routes ne marchent pas ? 
+    (limite d'express? => plugin de fastify? => je sais pas faire?certainement )
+
+Soucis de relations de table avec les clés => pas fou mcd
+
+///function pour les routes (obvious)
+
+app.route('/book')
+    .put(function(req, res) {
+    res.send('Update the book');
+  });
+
+
+https://www.youtube.com/watch?v=iM_S4RczozU
+https://expressjs.com/fr/guide/routing.html
